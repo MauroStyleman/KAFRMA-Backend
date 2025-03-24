@@ -1,0 +1,75 @@
+
+POST http://127.0.0.1:8000/generate-tour
+Content-Type: application/json
+
+{
+  "name": "Frans Dillen",
+  "job": "Schipper",
+  "age": 29,
+  "hobbies": ["Cartoons, Muziek"]
+}
+
+###
+
+POST http://127.0.0.1:8000/generate-tour
+Content-Type: application/json
+
+{
+  "name": "Ruben Van Haaren",
+  "job" : "Ambtenaar",
+  "age" : 29,
+  "hobbies": ["Geschiedenis", "Voetbal"]
+}
+
+###
+
+POST http://127.0.0.1:8000/generate-puzzle
+Content-Type: application/json
+
+{
+  "location": "Sint-Pauluskerk",
+  "location_info": "De Sint-Pauluskerk was in de 16e eeuw een centrum van protestantse invloed. Het gebouw werd meermaals geplunderd, maar de kunstvoorwerpen werden gered, wat de band met de vorige locatie versterkt en tevens een parallel vormt met een recente periode van verlies en wederopbouw.",
+  "user_interests" : ["Geschiedenis", "Voetbal"],
+  "user_job" : "Ambtenaar",
+  "location_story" : "Hier zie je de kerk tegenover je, Kacper. Stap naar binnen, als je durft, dit was een kloosterkerk, een plek van intellectueel leven waar de Dominicanen een bron van kennis vormden. De kerk heeft een turbulente geschiedenis en werd door brand zwaar beschadigd, maar de kunstschatten zijn desondanks bewaard gebleven, net als de kennis van het tijdperk. Ik was hier vaak te vinden, gefascineerd door de sterke geestelijke uitstraling."
+}
+
+###
+
+POST http://127.0.0.1:8000/generate-puzzle
+Content-Type: application/json
+
+{
+  "location": "Het Letterenhuis",
+  "location_info": "Het Letterenhuis is ontstaan in 1899, met de aankoop van het literaire archief van Hendrik Conscience, een bekende Vlaamse schrijver.",
+  "user_interests" : ["Geschiedenis", "Voetbal"],
+  "user_job" : "Ambtenaar",
+  "location_story" : "Hier hebben we kunst- en geschiedenisliefhebbers, toch? Het Letterenhuis, het literaire hart van Vlaanderen, is een plek vol verhalen. Hier komen de woorden van de Antwerpse dichters en schrijvers samen. Hier vind je mijn gedichten en die van vele andere auteurs, die ik mijn collega's noemde. Een plek vol verhalen, net als onze eigen geschiedenis."
+}
+
+###
+
+POST http://127.0.0.1:8000/hint
+Content-Type: application/json
+
+{
+  "location": "De Plantentuin",
+  "question": "De Orangerie in de Plantentuin van Antwerpen bevat borstbeelden van bekende figuren. Welke van de volgende figuren is daar NIET vertegenwoordigd?",
+  "answer": "Peter Paul Rubens",
+  "hint_level": 3
+}
+
+
+###
+
+POST http://127.0.0.1:8000/generate-wordle
+Content-Type: application/json
+
+{
+  "location": "Het Letterenhuis",
+  "location_info": "Het Letterenhuis is ontstaan in 1899, met de aankoop van het literaire archief van Hendrik Conscience, een bekende Vlaamse schrijver.",
+  "user_interests": ["Geschiedenis", "Voetbal"],
+  "user_job": "Ambtenaar",
+  "location_story": "Hier hebben we kunst- en geschiedenisliefhebbers, toch? Het Letterenhuis, het literaire hart van Vlaanderen, is een plek vol verhalen. Hier komen de woorden van de Antwerpse dichters en schrijvers samen. Hier vind je mijn gedichten en die van vele andere auteurs, die ik mijn collega's noemde. Een plek vol verhalen, net als onze eigen geschiedenis."
+}
+
